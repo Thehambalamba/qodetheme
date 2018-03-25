@@ -1,0 +1,98 @@
+/** ==== GLOBAL ====**/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins/poppins-medium-webfont.eot');
+    src: url('../fonts/poppins/poppins-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poppins/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-medium-webfont.woff') format('woff'),
+         url('../fonts/poppins/poppins-medium-webfont.ttf') format('truetype'),
+         url('../fonts/poppins/poppins-medium-webfont.svg#poppinsmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins/poppins-regular-webfont.eot');
+    src: url('../fonts/poppins/poppins-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-regular-webfont.woff') format('woff'),
+         url('../fonts/poppins/poppins-regular-webfont.ttf') format('truetype'),
+         url('../fonts/poppins/poppins-regular-webfont.svg#poppinsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: poppinsmedium;
+    color: #fff;
+    font-size: 35px;
+}
+
+/** ==== BANNER ====**/
+section.banner {
+    /* width: 100%;
+    height: auto;
+    background: url('../img/banner.jpg') top center / 100% 100%; */
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+p.banner-txt {
+    padding-right: 35%;
+    padding-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-family: open_sansregular;
+    color: #fff;
+}
+
+p.banner-txt::before {
+    margin-top: 7px;
+    margin-right: 15px;
+    display: block;
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 30px;
+    border-top: 1px solid #fff;
+}
+
+button.purchase {
+    height: 100%;
+    padding: 5px 40px;
+    color: #000000;
+    font-family: poppinsregular;
+    letter-spacing: 3px;
+    border-radius: 0;
+    background-color: #ffe9e2;
+}
