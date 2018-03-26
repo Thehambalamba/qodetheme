@@ -1,4 +1,4 @@
-/** ==== GLOBAL ====**/
+/** ==== Global ====**/
 @font-face {
     font-family: 'open_sansregular';
     src: url('../fonts/opensans/opensans-regular-webfont.eot');
@@ -49,11 +49,21 @@
 
 h1 {
     font-family: poppinsmedium;
-    color: #fff;
     font-size: 35px;
 }
 
-/** ==== BANNER ====**/
+h2 {
+    font-family: poppinsmedium;
+    font-size: 35px;
+}
+
+
+/** ==== Banner ====**/
+
+h1.title-white {
+    color: #fff;
+}
+
 section.banner {
     /* width: 100%;
     height: auto;
@@ -95,4 +105,48 @@ button.purchase {
     letter-spacing: 3px;
     border-radius: 0;
     background-color: #ffe9e2;
+}
+
+/** ==== Products Small ====**/
+
+h1.title-black {
+    color: #000000;
+}
+
+div.new::before {
+    content: 'NEW';
+    width: 20%;
+    background-color: #ffe9e2;
+    position: absolute;
+    right: 0;
+}
+
+div.sale::before {
+    content: '15%';
+    width: 20%;
+    background-color: #ffe9e2;
+    position: absolute;
+    right: 0;
+}
+
+/** ==== Products Large ====**/
+
+.products-large-left,
+.products-large-right {
+    position: relative;
+}
+
+.products-large-left img,
+.products-large-right img {
+    float: right;
+}
+
+/** ==== Blog ====**/
+
+div.blog-box {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    margin: 5%;
 }
