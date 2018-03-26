@@ -533,5 +533,23 @@ div.footer-col-wrap h6{
         height: 81%;
         padding-top: 40%;
     }
+
+    .products-large-left img,
+    .products-large-right img {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 470) {
+    .products-hover {
+        height: 71%;
+        padding-top: 40%;
+    }
+
+    .products-large-left img,
+    .products-large-right img {
+        width: 40%;
+    }
     
 }
