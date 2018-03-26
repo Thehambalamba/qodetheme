@@ -385,6 +385,17 @@ section.blog {
     padding-bottom: 120px;
 }
 
+section.blog .col-lg-4:hover > .blog-box {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+section.blog .col-lg-4:hover > img {
+    transition: 0.4s;
+    filter: brightness(70%);
+    
+}
+
 div.blog-box {
     transition: 0.4s;
     position: absolute;
@@ -398,8 +409,7 @@ div.blog-box {
 }
 
 div.blog-box:hover {
-    transition: 0.4s;
-    transform: scale(1.1);
+    
 }
 
 div.blog-box p.blog-category {

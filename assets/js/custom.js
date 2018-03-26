@@ -53,37 +53,4 @@ function changeRight(e) {
 
     }, 500);
 
-
 }
-
-$(function ($) {
-
-    // Call function each time the window is scrolled
-    $(window).scroll(function () {
-
-        // Look for the object
-        $('.products-large-left').each(function (i) {
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            // If it is in viewport add the classes
-            if (bottom_of_window > bottom_of_object) {
-                $(this).addClass('animated slideInLeft opacity-full');
-            };
-
-        });
-
-        // Look for the object
-        $('.products-large-right').each(function (i) {
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            // If it is in viewport add the classes
-            if (bottom_of_window > bottom_of_object) {
-                $(this).addClass('animated slideInRight opacity-full');
-            };
-
-        });
-
-    });
-});
